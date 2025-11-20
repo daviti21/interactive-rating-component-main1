@@ -3,8 +3,7 @@ const five = document.querySelector('#five');
 const button = document.querySelector('#submit');
 const selectedBox1 = document.querySelector('#selected-box1');
 const selectedBox2 = document.querySelector('#selected-box2');
-selectedBox2.style.display = 'none';
-selectedBox1.style.display = 'none';
+ 
  four.addEventListener('click', () => {
     four.classList.toggle('active');
    if(four.classList.contains('active')){
