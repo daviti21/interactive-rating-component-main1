@@ -20,9 +20,9 @@ button.addEventListener('click', () => {
 })
  
  if(four.classList.contains('active')){
-   five.classList.remove('active');
+   five.classList.toggle('not-active');
  }
 
  if(five.classList.contains('active')){
-   four.classList.remove('active');
+   four.classList.toggle('not-active');
  }
