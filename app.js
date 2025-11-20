@@ -5,11 +5,20 @@ const button = document.querySelector('#submit');
 
  four.addEventListener('click', () => {
     four.classList.toggle('active');
-  
+   if(four.classList.contains('active')){
+   five.classList.add('not-active');
+ }else{
+   five.classList.remove('not-active');
+ }
  })
 
  five.addEventListener('click', () => {
    five.classList.toggle('active');
+   if(five.classList.contains('active')){
+   four.classList.add('not-active');
+ }else{
+   four.classList.remove('not-active');
+ }
  })
  
   
@@ -19,10 +28,4 @@ button.addEventListener('click', () => {
    }
 })
  
- if(four.classList.contains('active')){
-   five.classList.toggle('not-active');
- }
-
- if(five.classList.contains('active')){
-   four.classList.toggle('not-active');
- }
+ i 
