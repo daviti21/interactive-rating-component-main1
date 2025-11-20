@@ -11,7 +11,7 @@ const selectedBox2 = document.querySelector('#selected-box2');
    selectedBox2.style.display = 'none';
  }else{
    five.classList.remove('not-active');
-    selectedBox2.style.display = 'block';
+     
  }
  })
 
@@ -22,7 +22,7 @@ const selectedBox2 = document.querySelector('#selected-box2');
     selectedBox1.style.display = 'none';
  }else{
    four.classList.remove('not-active');
-    selectedBox1.style.display = 'block';
+     
  }
  })
  
