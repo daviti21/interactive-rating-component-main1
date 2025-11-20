@@ -30,18 +30,15 @@ const selectedBox2 = document.querySelector('#selected-box2');
  
   
 button.addEventListener('click', () => {
-   if(four.classList.contains('active') || five.classList.contains('active')){
+   if(four.classList.contains('active')){
       window.location.href = 'active.html';
    }
 })
 
-if(four){
-   selectedBox2.style.display = 'none';
-   selectedBox1.style.display = 'block';
-}
 
-if(five){
-   selectedBox1.style.display = 'none';
-   selectedBox2.style.display = 'block';
-}
+button.addEventListener('click', () => {
+   if(five.classList.contains('active')){
+      window.location.href = 'active2.html';
+   }
+})
  
