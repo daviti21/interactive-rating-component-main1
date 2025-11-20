@@ -19,4 +19,10 @@ button.addEventListener('click', () => {
    }
 })
  
- 
+ if(four.classList.contains('active')){
+   five.classList.remove('active');
+ }
+
+ if(five.classList.contains('active')){
+   four.classList.remove('active');
+ }
