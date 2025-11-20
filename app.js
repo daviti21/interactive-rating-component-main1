@@ -32,13 +32,10 @@ const selectedBox2 = document.querySelector('#selected-box2');
 button.addEventListener('click', () => {
    if(four.classList.contains('active')){
       window.location.href = 'active.html';
-   }
-})
-
-
-button.addEventListener('click', () => {
-   if(five.classList.contains('active')){
+   } else if(five.classList.contains('active')){
       window.location.href = 'active2.html';
    }
 })
+
+
  
