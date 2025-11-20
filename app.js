@@ -3,12 +3,13 @@ const five = document.querySelector('#five');
 const button = document.querySelector('#submit');
 const selectedBox1 = document.querySelector('#selected-box1');
 const selectedBox2 = document.querySelector('#selected-box2');
-
+selectedBox2.style.display = 'none';
+selectedBox1.style.display = 'none';
  four.addEventListener('click', () => {
     four.classList.toggle('active');
    if(four.classList.contains('active')){
    five.classList.add('not-active');
-   selectedBox2.style.display = 'none';
+    selectedBox1.style.display = 'block';
  }else{
    five.classList.remove('not-active');
      
@@ -19,7 +20,7 @@ const selectedBox2 = document.querySelector('#selected-box2');
    five.classList.toggle('active');
    if(five.classList.contains('active')){
    four.classList.add('not-active');
-    selectedBox1.style.display = 'none';
+    selectedBox2.style.display = 'block';
  }else{
    four.classList.remove('not-active');
      
